@@ -3,7 +3,7 @@ import os
 class Config:
 
     SECRET_KEY = 'SECRET_KEY'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:manage@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -28,7 +28,7 @@ class ProdConfig(Config):
 
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:manage@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
 
     pass
 

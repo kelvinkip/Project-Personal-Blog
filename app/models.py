@@ -1,7 +1,7 @@
-from . import db
+from app import db
 from werkzeug.security import (generate_password_hash,check_password_hash)
 from flask_login import UserMixin
-from . import login_manager
+from app import login_manager
 
 @login_manager.user_loader
 def user_loader(user_id):
@@ -103,3 +103,6 @@ class Subscribers(db.Model):
     __tablename__ = "subscribers"
     id = db.Column(db.Integer, primary_key = True)
     email = db.Column(db.String(255), unique = True, index = True)
+
+
+  
