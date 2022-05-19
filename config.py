@@ -3,8 +3,8 @@ import os
 class Config:
 
     SECRET_KEY = 'SECRET_KEY'
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
-    SQLALCHEMY_DATABASE_URI = 'postgres://ndbyxqlwfnyrtx:0a31ed24483de3af4f21181daf70074cd28ddf5241aaad37535e79755af9703f@ec2-54-86-224-85.compute-1.amazonaws.com:5432/d6gksu1u8nbd6d'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
+    #SQLALCHEMY_DATABASE_URI = 'postgres://ndbyxqlwfnyrtx:0a31ed24483de3af4f21181daf70074cd28ddf5241aaad37535e79755af9703f@ec2-54-86-224-85.compute-1.amazonaws.com:5432/d6gksu1u8nbd6d'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -29,8 +29,8 @@ class ProdConfig(Config):
 
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgres://ndbyxqlwfnyrtx:0a31ed24483de3af4f21181daf70074cd28ddf5241aaad37535e79755af9703f@ec2-54-86-224-85.compute-1.amazonaws.com:5432/d6gksu1u8nbd6d'
-    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
+    #SQLALCHEMY_DATABASE_URI = 'postgres://ndbyxqlwfnyrtx:0a31ed24483de3af4f21181daf70074cd28ddf5241aaad37535e79755af9703f@ec2-54-86-224-85.compute-1.amazonaws.com:5432/d6gksu1u8nbd6d'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:1234@localhost/projectblog'
 
     pass
 
